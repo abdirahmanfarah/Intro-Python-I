@@ -6,13 +6,23 @@
 
 # YOUR CODE HERE
 
-print(f1(1, 2))
+
+# def f1(x, y):
+#     return x + y
+
+
+# print(f1(1, 2))
 
 # Write a function f2 that takes any number of integer arguments and prints the
 # sum.
 # Note: Google for "python arbitrary arguments" and look for "*args"
 
 # YOUR CODE HERE
+
+
+def f2(*args):
+    return sum(args)
+
 
 print(f2(1))                    # Should print 1
 print(f2(1, 3))                 # Should print 4
