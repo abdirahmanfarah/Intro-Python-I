@@ -31,5 +31,18 @@ import sys
 import calendar
 from datetime import datetime
 
+print(sys.argv)
 
-#
+if len(sys.argv) < 2:
+    print(calendar.month(datetime.now().year, datetime.now().month))
+
+if len(sys.argv) > 2:
+    year = int(sys.argv[2])
+    month = int(sys.argv[1])
+    print(calendar.month(year, month))
+
+elif len(sys.argv) > 1:
+    month = int(sys.argv[1])
+    print(calendar.month(datetime.now().year, month))
+else:
+    print("From the command line you would call `python3 14_cal.py 4 2015`")
